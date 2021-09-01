@@ -24,7 +24,7 @@ class BirdsController < ApplicationController
 
   # PATCH /birds/:id
   def update
-    bird = Bird.find_by(id: params[:id])
+    bird = Bird.find_by(id: params[:ide])
     if bird
       bird.update(bird_params)
       render json: bird
